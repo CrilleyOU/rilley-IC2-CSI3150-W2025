@@ -17,6 +17,7 @@ body {
     border: 3px solid #ffffff;
     margin: 10px;
     padding: 20px;
+    color: #ffffff;
 }
 
 .subtitle h2 {
@@ -25,6 +26,7 @@ body {
     justify-content: center;
     border: 3px solid #ffffff;
     padding: 20px;
+    color: #ffffff;
 }
 
 img{
