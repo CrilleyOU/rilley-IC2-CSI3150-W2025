@@ -10,28 +10,31 @@ body {
     background: #000000;
 }
 
-.title h1 {
+h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 3px solid #ffffff;
+    /* border: 3px solid #ffffff; */
     margin: 10px;
     padding: 20px;
     color: #ffffff;
 }
 
-.subtitle h2 {
+h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 3px solid #ffffff;
+    /* border: 3px solid #ffffff; */
+    margin: 10px;
     padding: 20px;
     color: #ffffff;
 }
 
+/* Manually set height so the buttons all appear on the same horizontal axis  */
+/* Left width as vw cause it kept the images there somehwat while resizing */
 img{
     max-width: 20vw;
-    height: auto;
+    height: 330px;
 }
 
 figure{
@@ -48,11 +51,23 @@ figure figcaption{
     padding-top: 10px;
 }
 
+figure figcaption button{
+    background-color: #ffffff;
+    padding: 10px 30px;
+    font-size: 18px;
+}
+
+figure figcaption button:hover{
+    background-color: #d85454;
+    cursor: pointer;
+}
+
 .columns{
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 100px 0 100px;
 }
 
 .columns .pictures{
@@ -60,4 +75,16 @@ figure figcaption{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.columns .pictures .reveal-button{
+    background-color: #ffffff;
+    padding: 15px 40px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.columns .pictures .reveal-button:hover{
+    background-color: #52bb87;
+    cursor: pointer;
 }

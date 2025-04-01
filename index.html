@@ -1,50 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reveal the Animal</title>
+    <link rel="stylesheet" href="./css/styles.css" />
     <script src="./js/functionality.js" defer></script>
-</head>
-<body>
-    <div class="title"><h1>Welcome to the interactive Reveal What's that Animal UI</h1></div>
+  </head>
+  <body>
+    <h1>Welcome to the Interactive Animal Reveal UI</h1>
+    <h2>Click the buttons below to reveal the animal images</h2>
 
-    <div class="subtitle"><h2>Click on the buttons below to reveal the animal images</h2></div>
+    <div class="columns">
+      <!-- Cat Section -->
+      <div class="pictures">
+        <figure class="hidden-box cat hidden">
+          <img src="./assets/tabby-cat.jpg" alt="A picture of a cat" />
+          <figcaption>
+            <button class="hide-button" id="hide-cat">Hide Result</button>
+          </figcaption>
+        </figure>
+        <button class="reveal-button" id="cat">Reveal a CAT</button>
+      </div>
 
-        <div class="columns">
+      <!-- Dog Section -->
+      <div class="pictures">
+        <figure class="hidden-box dog hidden">
+          <img src="./assets/dog.jpg" alt="A picture of a dog" />
+          <figcaption>
+            <button class="hide-button" id="hide-dog">Hide Result</button>
+          </figcaption>
+        </figure>
+        <button class="reveal-button" id="dog">Reveal a DOG</button>
+      </div>
 
-            <div class="pictures">
-
-                <figure style="visibility: hidden;">
-                    <img src="./assets/tabby-cat.jpg" alt="a picture of a cat">
-                    <figcaption><button id = "hide-cat">Hide Result</button></figcaption>
-                </figure>
-
-                <button id="cat">Reveal a CAT</button>
-            </div>
-
-            <div class="pictures">
-
-                <figure style="visibility: hidden;">
-                    <img src="./assets/dog.jpg" alt="a picture of a dog">
-                <figcaption><button id="hide-dog">Hide Result</button></figcaption>
-                
-                </figure>
-
-                <button id="dog">Reveal a DOG</button>
-            </div>
-
-            <div class="pictures">
-
-                <figure style="visibility: hidden;">
-                    <img src="./assets/cow.jpg" alt="a picture of a cow">
-                    <figcaption><button id="cow">Reveal a COW</button></figcaption>
-                </figure>
-
-                <button id="hide-cow">Hide Result</button>
-            </div>
-              
-        </div>
-</body>
+      <!-- Cow Section -->
+      <div class="pictures">
+        <figure class="hidden-box cow hidden">
+          <img src="./assets/cow.jpg" alt="A picture of a cow" />
+          <figcaption>
+            <button class="hide-button" id="hide-cow">Hide Result</button>
+          </figcaption>
+        </figure>
+        <button class="reveal-button" id="cow">Reveal a COW</button>
+      </div>
+    </div>
+  </body>
 </html>
