@@ -77,6 +77,10 @@ figure figcaption button:hover{
     flex-direction: column;
 }
 
+.columns .pictures .box{
+    visibility: hidden;
+}
+
 .columns .pictures .reveal-button{
     background-color: #ffffff;
     padding: 15px 40px;

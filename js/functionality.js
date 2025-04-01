@@ -1,18 +1,32 @@
-const picture_box = document.querySelectorAll(".columns .hidden-box");
-const cat_button = document.getElementById("cat");
-const dog_button = document.getElementById("dog");
-const cow_button = document.getElementById("cow");
- 
+const cat_show = document.getElementById("show-cat");
+const dog_show = document.getElementById("show-dog");
+const cow_show = document.getElementById("show-cow");
+const cat_hide = document.getElementById("hide-cat");
+const dog_hide = document.getElementById("hide-dog");
+const cow_hide = document.getElementById("hide-cow");
 
 // Add event listeners to the buttons
-cat_button.addEventListener("click", () => {
-    document.querySelector(".columns .hidden-box.cat").classList.remove("hidden");
+// We just alter the style property of visibility on each of them to ensure they keep their space on the page while hidden
+cat_show.addEventListener("click", () => {
+  document.querySelector(".columns .box.cat").style.visibility = "visible";
 });
 
-dog_button.addEventListener("click", () => {
-    document.querySelector(".columns .hidden-box.dog").classList.remove("hidden");
+dog_show.addEventListener("click", () => {
+  document.querySelector(".columns .box.dog").style.visibility = "visible";
 });
 
-cow_button.addEventListener("click", () => {
-    document.querySelector(".columns .hidden-box.cow").classList.remove("hidden");
+cow_show.addEventListener("click", () => {
+  document.querySelector(".columns .box.cow").style.visibility = "visible";
+});
+
+cat_hide.addEventListener("click", () => {
+  document.querySelector(".columns .box.cat").style.visibility = "hidden";
+});
+
+dog_hide.addEventListener("click", () => {
+  document.querySelector(".columns .box.dog").style.visibility = "hidden";
+});
+
+cow_hide.addEventListener("click", () => {
+  document.querySelector(".columns .box.cow").style.visibility = "hidden";
 });
