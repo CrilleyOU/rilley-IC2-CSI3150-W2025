@@ -32,6 +32,20 @@ img{
     height: auto;
 }
 
+figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+figure figcaption{
+    text-align: center;
+    padding-top: 10px;
+}
+
 .columns{
     position: relative;
     display: flex;
@@ -39,8 +53,9 @@ img{
     justify-content: space-between;
 }
 
-
-.boxes button{
-    margin-left: 50px;
-    margin-right: 50px
+.columns .pictures{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
