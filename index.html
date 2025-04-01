@@ -4,19 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/functionality.js" defer></script>
 </head>
 <body>
-    <div class="title">Welcome to the interactive Reveal What's that Animal UI</div>
-    <div class="subtitle">Click on the buttons below to reveal the animal images</div>
-    <div class="boxes">
-        <div class="picures">
-            <!-- insert picture boxes here -->
+    <div class="title"><h1>Welcome to the interactive Reveal What's that Animal UI</h1></div>
+
+    <div class="subtitle"><h2>Click on the buttons below to reveal the animal images</h2></div>
+
+        <div class="columns">
+
+            <div class="pictures">
+
+                <div class="hidden-box">
+                    <img src="./assets/tabby-cat.jpg" alt="a picture of a cat">
+                    <button id = "hide-cat">Hide Result</button>
+                </div>
+
+                <button id="cat">Reveal a CAT</button>
+            </div>
+
+            <div class="pictures">
+
+                <div class="hidden-box">
+                    <img src="./assets/dog.jpg" alt="a picture of a dog">
+                    <button id="hide-dog">Hide Result</button>
+                </div>
+
+                <button id="dog">Reveal a DOG</button>
+            </div>
+
+            <div class="pictures">
+
+                <div class="hidden-box">
+                    <img src="./assets/cow.jpg" alt="a picture of a cow">
+                    <button id="cow">Reveal a COW</button>
+                </div>
+                
+                <button id="hide-cow">Hide Result</button>
+            </div>
+              
         </div>
-        <div class="buttons">
-            <button></button>
-            <button></button>
-            <button></button>
-        </div>
-    </div>
 </body>
 </html>
